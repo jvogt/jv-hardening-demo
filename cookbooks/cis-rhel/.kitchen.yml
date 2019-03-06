@@ -1,0 +1,57 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  root_path: "/home/vagrant/kitchen" # move from /tmp
+<% if ENV['CHEF_VERSION'] %>
+  require_chef_omnibus: <%= ENV['CHEF_VERSION'] %>
+<% end %>
+  deprecations_as_errors: true
+
+verifier:
+  name: inspec
+  sudo: true
+
+# See .kitchen.aws.yml for RedHat Testing
+platforms:
+- name: centos6
+  driver_config:
+    box: bento/centos-6
+
+- name: centos7
+  driver_config:
+    box: bento/centos-7
+
+suites:
+  - name: rhel6
+    includes:
+      - centos6
+    verifier:
+      inspec_tests:
+        - test/integration/default/rhel6/inspec # cis-rhel6-level1
+    run_list:
+      - recipe[cis-rhel::default]
+      - recipe[augment::vbox]
+    attributes:
+      ssh-hardening:
+        ssh:
+          server:
+            cipher: 'aes128-ctr,aes192-ctr,aes256-ctr'
+      firewall:
+        allow_ssh: true
+  - name: rhel7
+    includes:
+      - centos7
+    verifier:
+      inspec_tests:
+        - test/integration/default/rhel7/inspec # cis-rhel7-level1
+    run_list:
+      - recipe[cis-rhel::default]
+      - recipe[augment::vbox]
+    attributes:
+      ssh-hardening:
+        ssh:
+          server:
+            cipher: 'aes128-ctr,aes192-ctr,aes256-ctr'

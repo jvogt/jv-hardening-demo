@@ -1,0 +1,25 @@
+I, [2019-03-06T06:55:25.719913 #52063]  INFO -- base-centos-7: -----> Verifying <base-centos-7>...
+I, [2019-03-06T06:55:30.094855 #52063]  INFO -- base-centos-7: Loaded cis-centos7-lv1-wrapper 
+E, [2019-03-06T06:55:33.300376 #52063] ERROR -- base-centos-7: Verify failed on instance <base-centos-7>.
+E, [2019-03-06T06:55:33.300486 #52063] ERROR -- base-centos-7: ------Exception-------
+E, [2019-03-06T06:55:33.300511 #52063] ERROR -- base-centos-7: Class: Kitchen::ActionFailed
+E, [2019-03-06T06:55:33.300529 #52063] ERROR -- base-centos-7: Message: Inspec Runner returns 1
+E, [2019-03-06T06:55:33.300545 #52063] ERROR -- base-centos-7: ----------------------
+E, [2019-03-06T06:55:33.300561 #52063] ERROR -- base-centos-7: ------Backtrace-------
+E, [2019-03-06T06:55:33.300576 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-inspec-0.25.0/lib/kitchen/verifier/inspec.rb:98:in `call'
+E, [2019-03-06T06:55:33.300592 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:458:in `block in verify_action'
+E, [2019-03-06T06:55:33.300607 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-03-06T06:55:33.300622 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-03-06T06:55:33.300638 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2019-03-06T06:55:33.300654 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:512:in `action'
+E, [2019-03-06T06:55:33.300669 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:450:in `verify_action'
+E, [2019-03-06T06:55:33.300684 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-03-06T06:55:33.300700 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-03-06T06:55:33.300715 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-03-06T06:55:33.300731 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `each'
+E, [2019-03-06T06:55:33.300746 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-03-06T06:55:33.300762 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:162:in `verify'
+E, [2019-03-06T06:55:33.300777 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-03-06T06:55:33.300792 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-03-06T06:55:33.300814 #52063] ERROR -- base-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-03-06T06:55:33.300829 #52063] ERROR -- base-centos-7: ----End Backtrace-----

@@ -1,0 +1,7 @@
+#
+# Maintained by Chef cookbook
+# cookbook: cis-rhel
+#
+
+# Command line options for ntpd
+OPTIONS="-g -u ntp:ntp"

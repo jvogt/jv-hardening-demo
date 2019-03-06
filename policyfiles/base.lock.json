@@ -1,0 +1,94 @@
+{
+  "revision_id": "dd56ac7089124ccce108e418fbb603d9309ac0f348d053cec1346f9c5b4e1ad3",
+  "name": "base",
+  "run_list": [
+    "recipe[os-hardening::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "ohai": {
+      "version": "5.2.5",
+      "identifier": "f393ae21b9c53af8a3ee75662fce43f3c2ce5167",
+      "dotted_decimal_identifier": "68560795440104762.69986038791417806.74714224415079",
+      "cache_key": "ohai-5.2.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.5/download",
+        "version": "5.2.5"
+      }
+    },
+    "os-hardening": {
+      "version": "3.2.0",
+      "identifier": "0bf38fc64ca802e4747655a3c8f9eddcea9456e3",
+      "dotted_decimal_identifier": "3364023576602626.64304346281789689.261533084178147",
+      "source": "../cookbooks/os-hardening",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/dev-sec/chef-os-hardening.git",
+        "revision": "e07a21f7f6023afa3574dd349ffaa565f171ef20",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/os-hardening"
+      }
+    },
+    "sysctl": {
+      "version": "1.0.5",
+      "identifier": "3d2a23146a32c45b9a3635a51b7814c9528f24d5",
+      "dotted_decimal_identifier": "17216303734076100.25783780499594104.22854906094805",
+      "cache_key": "sysctl-1.0.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.0.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.0.5/download",
+        "version": "1.0.5"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "ohai",
+        "= 5.2.5"
+      ],
+      [
+        "os-hardening",
+        ">= 0.0.0"
+      ],
+      [
+        "sysctl",
+        "= 1.0.5"
+      ]
+    ],
+    "dependencies": {
+      "ohai (5.2.5)": [
+
+      ],
+      "os-hardening (3.2.0)": [
+        [
+          "sysctl",
+          "~> 1.0"
+        ]
+      ],
+      "sysctl (1.0.5)": [
+        [
+          "ohai",
+          ">= 5.0.0"
+        ]
+      ]
+    }
+  }
+}
