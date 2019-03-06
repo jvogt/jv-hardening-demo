@@ -1,25 +1,5 @@
-I, [2019-03-06T07:48:17.888738 #52842]  INFO -- default-habitat-centos-7: -----> Verifying <default-habitat-centos-7>...
-I, [2019-03-06T07:48:19.364177 #52842]  INFO -- default-habitat-centos-7: Loaded cis-centos7-lv1-wrapper 
-E, [2019-03-06T07:48:29.981320 #52842] ERROR -- default-habitat-centos-7: Verify failed on instance <default-habitat-centos-7>.
-E, [2019-03-06T07:48:29.981442 #52842] ERROR -- default-habitat-centos-7: ------Exception-------
-E, [2019-03-06T07:48:29.981466 #52842] ERROR -- default-habitat-centos-7: Class: Kitchen::ActionFailed
-E, [2019-03-06T07:48:29.981484 #52842] ERROR -- default-habitat-centos-7: Message: Inspec Runner returns 1
-E, [2019-03-06T07:48:29.981500 #52842] ERROR -- default-habitat-centos-7: ----------------------
-E, [2019-03-06T07:48:29.981535 #52842] ERROR -- default-habitat-centos-7: ------Backtrace-------
-E, [2019-03-06T07:48:29.981550 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-inspec-0.25.0/lib/kitchen/verifier/inspec.rb:98:in `call'
-E, [2019-03-06T07:48:29.981567 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:458:in `block in verify_action'
-E, [2019-03-06T07:48:29.981584 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:551:in `synchronize_or_call'
-E, [2019-03-06T07:48:29.981600 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:513:in `block in action'
-E, [2019-03-06T07:48:29.981629 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
-E, [2019-03-06T07:48:29.981645 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:512:in `action'
-E, [2019-03-06T07:48:29.981661 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:450:in `verify_action'
-E, [2019-03-06T07:48:29.981676 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
-E, [2019-03-06T07:48:29.981692 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
-E, [2019-03-06T07:48:29.981708 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:381:in `block in transition_to'
-E, [2019-03-06T07:48:29.981723 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `each'
-E, [2019-03-06T07:48:29.981739 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:380:in `transition_to'
-E, [2019-03-06T07:48:29.981755 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/instance.rb:162:in `verify'
-E, [2019-03-06T07:48:29.981770 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `public_send'
-E, [2019-03-06T07:48:29.981786 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
-E, [2019-03-06T07:48:29.981802 #52842] ERROR -- default-habitat-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
-E, [2019-03-06T07:48:29.981817 #52842] ERROR -- default-habitat-centos-7: ----End Backtrace-----
+I, [2019-03-06T09:45:53.213805 #54736]  INFO -- default-habitat-centos-7: -----> Setting up <default-habitat-centos-7>...
+I, [2019-03-06T09:45:53.215212 #54736]  INFO -- default-habitat-centos-7: Finished setting up <default-habitat-centos-7> (0m0.00s).
+I, [2019-03-06T09:45:53.215354 #54736]  INFO -- default-habitat-centos-7: -----> Verifying <default-habitat-centos-7>...
+I, [2019-03-06T09:45:57.918090 #54736]  INFO -- default-habitat-centos-7: Loaded cis-centos7-lv1-wrapper 
+I, [2019-03-06T09:46:10.339640 #54736]  INFO -- default-habitat-centos-7: Finished verifying <default-habitat-centos-7> (0m17.12s).

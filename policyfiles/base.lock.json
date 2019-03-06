@@ -1,5 +1,5 @@
 {
-  "revision_id": "dd56ac7089124ccce108e418fbb603d9309ac0f348d053cec1346f9c5b4e1ad3",
+  "revision_id": "7587ea348bb11c4409a1dfa88c3f9d36b13acc8a88a4789bd8e1883beecd351e",
   "name": "base",
   "run_list": [
     "recipe[os-hardening::default]"
@@ -8,6 +8,17 @@
 
   ],
   "cookbook_locks": {
+    "audit": {
+      "version": "7.4.0",
+      "identifier": "c7645043f08667e3c53541e38126a54ba93654a3",
+      "dotted_decimal_identifier": "56123816265418343.64111652242686246.181744380040355",
+      "cache_key": "audit-7.4.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/audit/versions/7.4.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/audit/versions/7.4.0/download",
+        "version": "7.4.0"
+      }
+    },
     "ohai": {
       "version": "5.2.5",
       "identifier": "f393ae21b9c53af8a3ee75662fce43f3c2ce5167",
@@ -21,18 +32,17 @@
     },
     "os-hardening": {
       "version": "3.2.0",
-      "identifier": "0bf38fc64ca802e4747655a3c8f9eddcea9456e3",
-      "dotted_decimal_identifier": "3364023576602626.64304346281789689.261533084178147",
+      "identifier": "0225fa85b638fb506dec74f51145fd5ba6811b00",
+      "dotted_decimal_identifier": "604707868784891.22638860478779717.278570077330176",
       "source": "../cookbooks/os-hardening",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "https://github.com/dev-sec/chef-os-hardening.git",
-        "revision": "e07a21f7f6023afa3574dd349ffaa565f171ef20",
+        "remote": "git@github.com:jvogt/jv-hardening-demo.git",
+        "revision": "887883fea97b195e0fba616f9e7e2d74bff5b5d7",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
           "origin/master"
         ]
       },
@@ -61,6 +71,10 @@
   "solution_dependencies": {
     "Policyfile": [
       [
+        "audit",
+        "= 7.4.0"
+      ],
+      [
         "ohai",
         "= 5.2.5"
       ],
@@ -74,6 +88,9 @@
       ]
     ],
     "dependencies": {
+      "audit (7.4.0)": [
+
+      ],
       "ohai (5.2.5)": [
 
       ],
@@ -81,6 +98,10 @@
         [
           "sysctl",
           "~> 1.0"
+        ],
+        [
+          "audit",
+          ">= 0.0.0"
         ]
       ],
       "sysctl (1.0.5)": [

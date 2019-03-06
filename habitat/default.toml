@@ -1,5 +1,5 @@
-interval = 1800
-splay = 1800
+interval = 40
+splay = 1
 splay_first_run = 0
 run_lock_timeout = 1800
 log_level = "warn"

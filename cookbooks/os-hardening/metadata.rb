@@ -50,3 +50,5 @@ recipe 'os-hardening::sysctl', 'set sane sysctl values'
 
 source_url 'https://github.com/dev-sec/chef-os-hardening'
 issues_url 'https://github.com/dev-sec/chef-os-hardening/issues'
+
+depends 'audit'

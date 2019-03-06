@@ -232,3 +232,12 @@ default['os-hardening']['security']['suid_sgid']['system_whitelist']          = 
 
 # set default cpu vendor
 default['os-hardening']['security']['cpu_vendor'] = 'intel'
+
+default['audit']['reporter'] = 'chef-automate'
+default['audit']['fetcher'] = 'chef-automate'
+default['audit']['profiles'].push(
+  {
+    'name': 'cis-wrapper',
+    'compliance': 'admin/cis-centos7-lv1-wrapper'
+  }
+)
