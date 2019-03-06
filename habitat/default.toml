@@ -1,3 +1,13 @@
-# Use this file to templatize your application's native configuration files.
-# See the docs at https://www.habitat.sh/docs/create-packages-configure/.
-# You can safely delete this file if you don't need it.
+interval = 1800
+splay = 1800
+splay_first_run = 0
+run_lock_timeout = 1800
+log_level = "warn"
+chef_client_ident = "" # this is blank by default so it can be populated from the bind
+env_path_prefix = "/sbin:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin"
+ssl_verify_mode = ":verify_peer"
+
+[data_collector]
+enable = true
+token = "hgN8iHv7JXb4AELNicDIusWwaQ0="
+server_url = "https://jv-a2.chef-demo.com/data-collector/v0/"
